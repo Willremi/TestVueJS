@@ -39,6 +39,12 @@
   <input v-model="message">
   <button v-on:click="reverseMessage">Message retourné</button>
 </div>
+
+<div id="app-7">
+  <ol>
+    <todo-item v-for="item in groceryList" v-bind:todo= "item" v-bind:key= "item.id"></todo-item>
+  </ol>
+</div>
   </body>
   <script src="js/script.js"></script>
 </html>
