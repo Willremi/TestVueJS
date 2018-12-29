@@ -28,6 +28,17 @@
     </li>
   </ol>
 </div>
+
+<div id="app-5">
+  <p>{{ message }}</p>
+  <button v-on:click="reverseMessage">Message retourné</button>
+</div>
+
+<div id="app-6">
+  <p>{{ message }}</p>
+  <input v-model="message">
+  <button v-on:click="reverseMessage">Message retourné</button>
+</div>
   </body>
   <script src="js/script.js"></script>
 </html>

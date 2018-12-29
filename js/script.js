@@ -32,3 +32,27 @@ var app4 = new Vue({
   }
 })
 // app4.todos.push({ text: 'Un nouvel élément ajouté' })
+
+var app5 = new Vue({
+  el: '#app-5',
+  data: {
+    message: 'Salut les gars !'
+  },
+  methods: {
+    reverseMessage: function () {
+      this.message = this.message.split('').reverse().join('')
+    }
+  }
+})
+
+var app6 = new Vue({
+  el: '#app-6',
+  data: {
+    message: 'Salut les amis !'
+  },
+  methods: {
+    reverseMessage: function () {
+      this.message = this.message.split('').reverse().join('')
+    }
+  }
+})
