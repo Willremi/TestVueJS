@@ -24,10 +24,10 @@ var app3 = new Vue({
 var app4 = new Vue({
   el: '#app-4',
   data: {
-    todos: [
-      { text: 'Apprendre JavaScript' },
-      { text: 'Apprendre Vue' },
-      { text: 'Créer quelque chose de génial' }
+    friends: [
+      { name: 'Thomas' },
+      { name: 'Jean François' },
+      { name: 'Yves' }
     ]
   }
 })
@@ -68,7 +68,7 @@ var app7 = new Vue({
     groceryList: [
       { id: 0, text: 'Chocolat' },
       { id: 1, text: 'Chips' },
-      { id: 2, text: 'Tout ce que les humains sont supposés manger' } 
+      { id: 2, text: 'Tout ce que les humains sont supposés manger' }
     ]
   }
 })
