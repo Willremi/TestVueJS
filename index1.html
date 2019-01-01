@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Test 2 sur vueJS</title>
+<script src="https://fr.vuejs.org/js/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <p>{{ texte }}</p>
+      <a :href="link + '/wordpress'" target="_blank">{{ texte2 }}</a>
+      <!--  raccourci v-bind est : par exemple v-bind:href= "", son raccourci :href="" -->
+    </div>
+    <div id="app-2">
+      <ul>
+        <li v-for="friend in friends">{{ friend }}</li>
+      </ul>
+      <div class="success" v-if="success">
+      <p>Bravo, vous me voyez</p>
+      </div>
+      <div class="error" v-else>
+        <p>Erreur, vous n'avez pas réussi</p>
+      </div>
+    </div>
+    <div id="app-3">
+      <input type="checkbox" v-model="success">
+      <div class="success" v-if="success" :style="style()">
+      <p>Bravo, vous me voyez</p>
+    </div>
+    <div class="error" v-else :style="style()">
+      <p>Erreur, vous n'avez pas réussi</p>
+    </div>
+    </div>
+  </body>
+    <script src="js/script2.js"></script>
+</html>
