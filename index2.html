@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Test 2 sur vueJS</title>
+<script src="https://fr.vuejs.org/js/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <input type="checkbox" v-model="success">
+      <input type="text" v-model="message">
+      {{ message }}
+      <div :class="cls">
+        Salut les amis
+      </div>
+    </div>
+
+    <div id="app-2">
+      <p>Prénom : {{ firstname }}<br>
+      Nom : {{ lastname }}<br>
+      <!-- Nom complet : {{ fullname }} -->
+      Nom complet : <input type="text" v-model="fullname">
+    </p>
+    </div>
+
+    <div id="app-3">
+      <p>Prénom : {{ firstname }}<br>
+      Nom : {{ lastname }}<br>
+      <!-- Nom complet : {{ fullname }} -->
+      Nom complet : <input type="text" v-model="fullname">
+    </p>
+    </div>
+  </body>
+    <script src="js/script3.js"></script>
+</html>
