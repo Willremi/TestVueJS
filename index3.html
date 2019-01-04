@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Test 2 sur vueJS</title>
+<script src="https://fr.vuejs.org/js/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <a href="http://wiremi.fr/wordpress" @click.prevent="demo">Cliquez sur le lien</a>
+    </div>
+<div id="app-2">
+  <input type="text" v-model.lazy="message">
+  {{ message }}
+</div>
+<div id="app-3">
+  <input type="text" v-salut.a.b.c="message">
+  <input type="text" v-model="message">
+  {{ message }}
+</div>
+  </body>
+    <script src="js/script4.js"></script>
+</html>
