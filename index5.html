@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Test 5 sur vueJS</title>
 <script src="https://fr.vuejs.org/js/vue.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/accordion.css">
 <style>
   .menu{
     background: green;
@@ -17,10 +18,13 @@
       <div class="header item">Tutoriel</div><br>
     </div><br>
 <div class="ui main container" id="app">
-  <message type="error" :message="message"></message>
+  
+  <message type="error" :message="message" header="Attention" v-if="alert" @close="hideAlert"></message>
+  <button @click="showAlert" v-if="!alert">Alerter</button>
   <counter></counter>
   <counter :start="2"></counter>
 </div>
   </body>
     <script src="js/script6.js"></script>
+
 </html>
