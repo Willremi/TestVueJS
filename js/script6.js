@@ -43,6 +43,6 @@ let app = new Vue({
   el: '#app',
   components: { message, counter },
   data: {
-    message: 'Salut les amis'
+    message: 'Salut à tous'
   }
 })
