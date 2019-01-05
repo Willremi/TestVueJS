@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Test 5 sur vueJS</title>
+<script src="https://fr.vuejs.org/js/vue.js"></script>
+<style>
+  .menu{
+    background: green;
+    text-align: center;
+    font-size: 20px;
+}
+</style>
+  </head>
+  <body>
+    <div class="ui inverted fixed menu">
+      <div class="header item">Tutoriel</div><br>
+    </div><br>
+<div class="ui main container" id="app">
+  <message type="error" :message="message"></message>
+  <counter></counter>
+  <counter :start="3"></counter>
+</div>
+  </body>
+    <script src="js/script6.js"></script>
+</html>
