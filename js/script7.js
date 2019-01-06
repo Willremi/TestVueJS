@@ -30,7 +30,7 @@ let Counter = {
     increment: function () {
       notifications_store.increment()
     }
-  }, 
+  },
   template: `<button @click="increment">{{ count }}</button>`
 }
 
